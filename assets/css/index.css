@@ -1,0 +1,335 @@
+/*GLOBAL*/
+
+body {
+	background: #FFFFFF;
+}
+
+/*CLASS*/
+
+.thumbnail {
+	border: none;
+}
+
+.container-gallery {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.container-gallery div.row div{
+	height: 450px;
+	width: 25%;
+}
+
+.container-mod {
+	margin-left: 15px;
+	margin-right: 30px;
+}
+
+p {
+	color: black;
+}
+
+h2.title {
+	margin-bottom: 10px;
+}
+
+.feat-imgs {
+	height: 450px;
+	width: 100%;
+}
+
+.side-feat-img {
+	height: 900px;
+	width: 100%;
+}
+
+.no-padding {
+	padding: 0px;
+}
+
+.main-raised {
+  border-radius: 0px;
+}
+
+.header-filter:after {
+	background-color: rgba(244, 244, 244, 0.4);
+}
+
+.navbar {
+	padding-top: 1%;
+}
+
+.navbar-brand {
+	position:absolute;
+	left: 40%;
+}
+
+.navbar, .navbar.navbar-default {
+	background-color: #45414f;
+}
+
+.section {
+	padding: none;
+}
+
+.navbar-brand {
+	margin-top: 2.5%;
+	position: absolute;
+    left: 48%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.max-scale {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.center-img {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+}
+
+/*ID*/
+#avatar-li {
+	margin-right: 2em;
+}
+
+#logo-li {
+	margin-right: 20em;
+}
+
+#navigation-main {
+	position: relative;
+}
+
+#navbar-custom .navbar-nav {
+	width: 100%;
+	text-align: center;
+}
+
+#navbar-custom .navbar-nav > li {
+	display: inline-block;
+	float: none;
+}
+
+#navbar-custom .navbar-nav > li > a {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#navbar-custom > ul > li  div.dropdown > a:hover {
+	color: #fff;
+}
+
+#my-other-carousel div.carousel-inner{
+	height: 900px;
+	background-image: url('../img/feat-side-bg.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#top-feat-1 {
+	height: 450px;
+	background-image: url('../img/feat-top-1-bg.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#top-feat-1-h5 {
+	margin-top: 20%;
+	margin-bottom: auto;
+	margin-left: 50%;
+	margin-right: auto;
+	text-align: left;
+}
+
+/* Expandable search bar */
+
+input {
+	outline: none;
+}
+
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+input[type=search] {
+	background: url('../img/search.png') no-repeat 9px center;
+	border: none;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+#expandable-search input[type=search] {
+	width: 15px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+}
+
+#expandable-search input[type=search]:focus {
+	width: 130px;
+	padding-left: 32px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+}
+#expandable-search input:-moz-placeholder {
+	color: transparent;
+}
+#expandable-search input::-webkit-input-placeholder {
+	color: transparent;
+}
+
+/*Carousel*/
+.carousel .background {
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 956px;
+}
+
+@media (max-width:991px) {
+	.carousel .background {
+		background-size: cover; /* To make the background image looks good */
+	}
+}
+
+.carousel-indicators {
+	margin-bottom: 5em;
+}
+
+.carousel-indicators li {
+	border-radius: 10px;
+}
+
+.carousel .carousel-indicators li,
+.carousel .carousel-indicators .active {
+	margin: 11px 10px;
+	background: rgba(255,255,255);
+}
+
+.carousel .carousel-indicators li {
+	background: rgba(255,255,255,.5);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+	border-radius: 20px;
+	border-style: none;
+}
+
+.carousel .background.a {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../img/image-1.jpg');
+}
+
+.carousel .background.b {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../img/pexels-photo-445109.jpeg');
+}
+
+.carousel .background.c {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../img/pexels-photo-429248.jpeg');
+}
+
+.carousel-fade .carousel-inner .item {
+	opacity: 0;
+	transition: opacity 0.5s; /* The 0.5s describes the duration to make the opacity from 0 to 1 */
+}
+
+.carousel-fade .carousel-inner .active {
+	opacity: 1;
+}
+
+.covertext {
+	position: absolute; /* To make the div to be place anywhere. It is out of the document flow */
+	top: 40%; 		    /* The distance between the div with the top of document */
+	left: 0px;          /* Make the div full width */
+	right: 0px;         /* Make the div full width */
+}
+
+.covertext-title {
+	float:none;
+	margin:0 auto;
+}
+
+.centerium-top {
+	margin-top: 15%;
+}
+
+.centerium-bottom {
+	margin-top: -3.5%;
+	margin-bottom: 10%;
+}
+
+.title {
+	text-align: center;
+}
+
+.covertext-title {
+	color: #fff;
+	text-align: left;
+}
+
+.explore {
+	text-align: left;
+	margin-top: 10px;
+}
+
+.btn-hack {
+	margin-top: 2em;
+	background-color: #45414f;
+}
+
+.btn-hack:hover {
+	background-color: #9c27b0;
+}
+
+.subtitle {
+	font-size: 1.5vh;
+	color: #fff;
+	text-align: left;
+}
+
+/* CSS Hack to trigger GPU for smooth transition */
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+	.carousel-fade .carousel-inner > .item.next,
+	.carousel-fade .carousel-inner > .item.active.right {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	.carousel-fade .carousel-inner > .item.prev,
+	.carousel-fade .carousel-inner > .item.active.left {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	.carousel-fade .carousel-inner > .item.next.left,
+	.carousel-fade .carousel-inner > .item.prev.right,
+	.carousel-fade .carousel-inner > .item.active {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
